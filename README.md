@@ -1,16 +1,18 @@
-# LMSDOS
+# LMS-DOS
 
-**A text-mode Lyrion Music Server controller for DOS PCs**
+**A simple, text-mode Logitech Media Server / Lyrion Music Server controller for DOS PCs**
 
-LMSDOS brings control of a modern [Lyrion Music Server](https://lyrion.org/) to vintage DOS computers.
+Want to control your Sequeezebox from your vintage PC? LMS-DOS brings control of a modern [Lyrion Music Server](https://lyrion.org/) to vintage DOS computers.
 
 It provides a compact 80x25 text-mode interface inspired by the LMS web interface and mobile controllers, while being designed to run on old 16-bit DOS hardware.
 
-Networking is provided by **Michael B. Brutman's mTCP TCP/IP library for DOS**.
+Networking is provided by **Michael B. Brutman's mTCP TCP/IP library (https://www.brutman.com/mTCP/) for DOS**.
+Once mTCP and LMS is setup, you only need to copy and run a single .exe file lmsdos.exe, and your vintage PC is your Squeezebox controller-   
+
 
 ## Features
 
-LMSDOS communicates directly with the Lyrion Music Server CLI interface over TCP port 9090.
+LMS-DOS communicates directly with the Lyrion Music Server CLI interface (e.g. over TCP port 9090).
 
 Current features include:
 
@@ -40,9 +42,6 @@ Current features include:
 
 The goal is to provide useful access to a modern LMS installation from machines ranging from early IBM PC compatibles upwards, without requiring HTTPS, a graphical environment, or a modern operating system.
 
-## Screenshot
-
-A screenshot will be added here.
 
 ## Requirements
 
@@ -50,9 +49,9 @@ A screenshot will be added here.
 
 You need:
 
-- DOS or a compatible DOS environment
+- DOS or a compatible DOS environment, runing a 4.77 MhZ 8088 CPU, or faster
 - An Ethernet adapter with a DOS packet driver
-- mTCP-compatible networking
+- mTCP-compatible networking (https://www.brutman.com/mTCP/)
 - A Lyrion Music Server reachable over the local network
 
 LMSDOS uses the LMS command-line interface, normally available on TCP port:
@@ -61,7 +60,6 @@ LMSDOS uses the LMS command-line interface, normally available on TCP port:
 9090
 ```
 
-No HTTPS support is required.
 
 ### Lyrion Music Server
 
@@ -73,17 +71,7 @@ The LMS CLI interface must be accessible from the DOS machine.
 
 Networking in LMSDOS is based on the excellent **mTCP** project by **Michael B. Brutman**.
 
-mTCP provides a lightweight TCP/IP stack and networking applications specifically designed for DOS and old 16-bit x86 computers. LMSDOS uses the mTCP TCP/IP library directly rather than requiring a resident TCP/IP stack.
-
-Official mTCP project:
-
-**https://github.com/mbbrutman/mTCP**
-
-mTCP home page:
-
-**http://www.brutman.com/mTCP/**
-
-Please refer to the official mTCP documentation for packet-driver setup, TCP/IP configuration, DHCP, and information about using the mTCP programming library.
+Please refer to the official mTCP documentation for packet-driver setup, TCP/IP configuration, DHCP, and information about using the mTCP programming library. 
 
 **mTCP is a separate project and is not part of LMSDOS. Credit for mTCP and its TCP/IP implementation belongs to Michael B. Brutman and the mTCP project.**
 
