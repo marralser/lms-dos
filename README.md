@@ -351,7 +351,6 @@ Lyrion Music Server is the community-maintained continuation of the server softw
 
 ## License
 
-License information for LMSDOS should be added here before publishing the project.
 
 mTCP is a separate project and remains subject to its own licensing terms. Consult the mTCP distribution and official repository for the applicable mTCP license and copyright information.
 
@@ -370,6 +369,3 @@ Testing on real vintage hardware is particularly useful. When reporting a proble
 - player type
 - description of the problem
 
----
-
-**LMSDOS — because a 40-year-old PC should still be able to choose the music.**
