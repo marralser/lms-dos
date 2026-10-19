@@ -1,13 +1,13 @@
-# LMS-DOS
+# LMS-DOS and LMS for GEM
 
-**A simple, text-mode Logitech Media Server / Lyrion Music Server controller for DOS PCs**
+**A simple, text- and GEM mode Logitech Media Server / Lyrion Music Server controller for DOS PCs**
 
 Want to control your Sequeezebox from your vintage PC? LMS-DOS brings control of a modern [Lyrion Music Server](https://lyrion.org/) to vintage DOS computers.
 
-It provides a compact 80x25 text-mode interface inspired by the LMS web interface and mobile controllers, while being designed to run on old 16-bit DOS hardware.
+It provides a compact 80x25 text-mode interface inspired by the LMS web interface and mobile controllers, while being designed to run on old 16-bit DOS hardware. The GEM version runs using Graphics Environment Manager (GEM), originally developed by Digital Research, as well as Open Gem.
 
 Networking is provided by **Michael B. Brutman's mTCP TCP/IP library (https://www.brutman.com/mTCP/) for DOS**.
-Once mTCP and LMS is setup, you only need to copy and run a single .exe file lmsdos.exe, and your vintage PC is your Squeezebox controller-   
+Once mTCP and LMS is setup, you only need to copy and run a single .exe file lmsdos.exe, or app file lmsge.app and your vintage PC is your Squeezebox controller-   
 
 
 ## Features
@@ -53,6 +53,10 @@ You need:
 - An Ethernet adapter with a DOS packet driver
 - mTCP-compatible networking (https://www.brutman.com/mTCP/)
 - A Lyrion Music Server reachable over the local network
+
+for the GEM Version
+
+- GEM 2.0 or newer
 
 LMSDOS uses the LMS command-line interface, normally available on TCP port:
 
